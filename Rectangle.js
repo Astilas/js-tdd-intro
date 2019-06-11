@@ -1,21 +1,25 @@
-// // Rectangle.js
-// class Rectangle {
-//   constructor(a, b) {
-//     this.a = a;
-//     this.b = b;
-//   }
+// Rectangle.js
+class Rectangle {
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
 
-//   isSquare() {
+  isSquare(a,b) {
+    if(a===b){
+      return true;
+    }else{
+      return false;
+    }
+  }
 
-//   }
+  getArea(a,b) {
+    return a*b;
+  }
 
-//   getArea() {
+  getPerimeter(a,b) {
+    return 2*(a+b);
+  }
+}
 
-//   }
-
-//   getPerimeter() {
-
-//   }
-// }
-
-// const rectangle = new Rectangle(10, 5);
+const rectangle = new Rectangle(10, 5);

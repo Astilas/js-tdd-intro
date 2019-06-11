@@ -4,18 +4,28 @@ const assert = require('assert');
 // WRITE THE ACTUAL FUNCTION HERE
 
 function capitalizeFirstLetters(sentence) {
-  function capitalizeFirst(input) {
-    return input.length > 0
-      ? input[0].toUpperCase() + input.slice(1)
-      : '';
-  }
-  
+  if (sentence === '') {
+    return '';
+  } else {
+
+    let maj = sentence.split('')
+    for (let i = 0; i < maj.length; i++) {
+      if (maj[i] === " ") {
+        maj[i + 1] = maj[i + 1].toUpperCase();
+      }
+
+    }
+    maj[0] = maj[0].toUpperCase();
+    let resultat = maj.join('');
+
+    return resultat;
+  };
 }
 
-//
-assert.strictEqual(capitalizeFirstLetters('i am learning TDD'), 'I Am Learning TDD');
+// function capitalizeFirstLetters(sentence) {
+//   return sentence.length > 0
+//     ? sentence[0].toUpperCase() + sentence.slice(1)
+//     : '';
+// }
 
-assert.strictEqual(capitalizeFirstLetters('i'), 'I');
-
-assert.strictEqual(capitalizeFirstLetters(''), '');
-
+module.exports = capitalizeFirstLetters;

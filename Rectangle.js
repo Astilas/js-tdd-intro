@@ -23,3 +23,4 @@ class Rectangle {
 }
 
 const rectangle = new Rectangle(10, 5);
+module.exports = Rectangle;

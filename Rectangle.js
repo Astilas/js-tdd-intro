@@ -6,7 +6,7 @@ class Rectangle {
   }
 
   isSquare(a,b) {
-    if(a===b){
+    if(this.a===this.b){
       return true;
     }else{
       return false;
@@ -14,11 +14,11 @@ class Rectangle {
   }
 
   getArea(a,b) {
-    return a*b;
+    return this.a*this.b;
   }
 
   getPerimeter(a,b) {
-    return 2*(a+b);
+    return 2*(this.a+this.b);
   }
 }
 

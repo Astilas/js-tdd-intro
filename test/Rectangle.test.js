@@ -15,11 +15,11 @@ describe('Rectangle', () => {
 
   it('area', () => {
     const rectangle1 = new Rectangle(10, 5);
-    assert.strictEqual(Rectangle.getArea(), 50);
+    assert.strictEqual(rectangle1.getArea(), 50);
   });
 
   it('perimètre', () => {
     const rectangle1 = new Rectangle(10, 5);
-    assert.strictEqual(Rectangle.getPerimeter(), 30);
+    assert.strictEqual(rectangle1.getPerimeter(), 30);
   });
 });
